@@ -1,0 +1,22 @@
+
+Generate a QR code
+===================
+1. User opens the webpage.
+2. System displays a form to generate a QR code
+    - Short Description
+    - Long Description
+    - Type
+    - Location
+    - Date
+3. User fills in the form approriately.  Date column is auto-filled.
+4. User submits the form by clicking the "generate" button.
+5. System generates a QR code and sends the png file to a Google Sheet/ Database
+
+Scan a QR code
+==============
+1. The user clicks a button to launch the device camera.
+2. The user scans the QR code.
+3. The system displays all information about the item associated to the qr code.
+4. The system changes the status of a scanned item to scanned+date of scanned
+
+

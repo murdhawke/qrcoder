@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QRCoder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="~bulma-calendar/dist/css/bulma-calendar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="~bulma-calendar/dist/js/bulma-calendar.min.js"></script>
+    <script defer src="js/custom.js"></script>
+    
+  </head>
+  <body>
+    <div class="column is-th is-centered">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">    
+          <div class="navbar-item">
+            <button class="button is-black mr-5 is-medium is-responsive">Generate QR Code</button>            
+            <button class="button is-info mr-5 is-medium is-responsive">Scan QR Code</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <section class="section main-section">
+    <div class="columns is-centered">
+      <div class="column is-two-thirds">
+        <div class="box">
+
+            <div class="field">
+              <label class="label">Short Description</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Text input">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Long Description</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Textarea"></textarea>
+              </div>
+            </div>            
+            <div class="field">
+              <label class="label">Type</label>
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>Stationery</option>
+                    <option>Computers and Software</option>
+                    <option>Electronics</option>
+                    <option>Furniture</option>
+                    <option>Machinery</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <div class="field">
+              <label class="label">Location</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Text input">
+              </div>
+            </div>
+            
+            <div class="field">
+              <label class="label">Date</label>
+              <div class="control">
+                <input class="input" type="date" showTodayButton="true">
+              </div>
+            </div>            
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link" onclick="location.href='http://localhost:9000/submit' ">Submit</button>
+              </div>
+              <div class="control">
+                <button class="button is-link is-light">Cancel</button>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="column">
+
+      </div>
+    </div>
+  </section>
+</div>
+  </body>
+</html>
